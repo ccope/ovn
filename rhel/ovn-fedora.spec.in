@@ -271,8 +271,8 @@ fi
 %else
     if [ $1 -eq 0 ] ; then
         # Package removal, not upgrade
-        /bin/systemctl --no-reload disable ovn-db@*.service >/dev/null 2>&1 || :
-        /bin/systemctl stop ovn-db@*.service >/dev/null 2>&1 || :
+        /bin/systemctl --no-reload disable ovn-db@.service >/dev/null 2>&1 || :
+        /bin/systemctl stop ovn-db@.service >/dev/null 2>&1 || :
     fi
 %endif
 
